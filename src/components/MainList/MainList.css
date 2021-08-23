@@ -1,0 +1,39 @@
+.MainList {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.MainList__container {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  z-index: 9;
+  height: 100%;
+  width: 28rem;
+  position: relative;
+}
+
+.MainList__Location {
+  display: flex;
+  justify-content: center;
+}
+
+.MainList__place {
+  text-align: center;
+  margin: 5px;
+}
+
+@media screen and (max-width: 685px) {
+  .MainList {
+    position: relative;
+  }
+  .MainList__container {
+    width: 28rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  .MainList__container {
+    width: 100vw;
+  }
+}
